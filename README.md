@@ -8,4 +8,6 @@
 - Previous versions should work, just update kernel structure offsets for whatever version used.
 - Versions after 1709 will not work as Microsoft no longer allows mapping a PML4 into virtual memory.
 ---------------------------
+***Built on visual studio 2017***
+---------------------------
 ***This driver does not attach to a target process, rather it walks a process's page table in order to read/write/modify memory.***
