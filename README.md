@@ -1,5 +1,5 @@
 # Memory Explorer
-<b>Funactionality</b>
+***Functionality***
 - Retrieve physical memory addresses  (IOCTL_LookupPage)
 - Update page table entries           (IOCTL_ModifyPage)
 - Read & write memory                 (IOCTL_ReadMemory & IOCTL_WriteMemory)
