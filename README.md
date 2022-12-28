@@ -11,3 +11,4 @@
 ---------------------------
 ***Built on Visual Studio 2017***
 - Couldn't get vs2022 or 2019 working on 1709.
+- Use WDK and Windows SDK version 10.0.17763.1
