@@ -147,13 +147,13 @@ ULONG64 FormatPTE(ULONG64 ullOldPTE, PTEFlags* pFlags)
 
 		case 0:		//Off
 		{
-			ullNewPTE &= ~(static_cast<ULONG64>(0b1) << i);
+			ullNewPTE &= ~(static_cast<ULONG64>(1) << i);
 			break;
 		}
 
 		case 1:		//On
 		{
-			ullNewPTE |= static_cast<ULONG64>(0b1) << i;
+			ullNewPTE |= static_cast<ULONG64>(1) << i;
 			break;
 		}
 
