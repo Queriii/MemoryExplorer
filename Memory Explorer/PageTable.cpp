@@ -28,7 +28,7 @@ public:
 		ULONG64 ullBuffer = ullEntry;
 		ullBuffer = ullBuffer >> 12;
 
-		ULONG64 ullBase = ullBuffer & 0b111111111111111111111111111111111111;	//fuck hex
+		ULONG64 ullBase = ullBuffer & 0b111111111111111111111111111111111111;
 		ullBase = ullBase << 12;
 
 		ullFormattedEntry = ullBase + (usOffset * sizeof(ULONG64));
