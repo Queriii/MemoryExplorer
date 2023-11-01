@@ -5,6 +5,8 @@
 #include "Routines.h"
 
 
+//Written and tested for Windows 10 (1709). Previous versions should still work; however, newer versions will not.
+
 
 void DriverUnload(PDRIVER_OBJECT pDriver);
 extern "C" NTSTATUS DriverEntry(PDRIVER_OBJECT pDriver, PUNICODE_STRING pRegistryPath)
@@ -79,7 +81,7 @@ void DriverUnload(PDRIVER_OBJECT pDriver)
 
 	if (NT_ERROR(ntDriverUnloadStatus))
 	{
-		LogMessage(L"DriverUnload ahs finished with a error(s)", ErrorNotification);
+		LogMessage(L"DriverUnload has finished with a error(s)", ErrorNotification);
 	}
 	else
 	{
